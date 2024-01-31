@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD 4</title>
+</head>
+<body>
+    <h1>LKPD 4</h1>
+    <script>
+        // 1
+        let pabp = 70;
+        let mtk = 82;
+        let dpk = 77;
+        
+        let rata = (pabp + mtk + dpk)/3;
+
+        if(rata>=80 && rata<=100){
+            maka = "A"
+        }else if(rata<=80 && rata>=75){
+            maka = "B"
+        }else if(rata<=75 && rata>=65){
+            maka = "C"
+        }else if(rata<=65 && rata>=45){
+            maka = "D"
+        }else if(rata<=45 && rata>=0){
+            maka = "E"
+        }else{
+            maka = "K"
+        }
+
+        console.log(`Nilai yang di dapat adalah grade ${maka}`)
+
+        // 2
+        let kode=22511197804
+
+        let golongan = Math.floor(kode/10000000000)
+        let tanggal = Math.floor((kode/100000000)%100)
+        let bulan = Math.floor((kode/1000000)%100)
+        let tahun = Math.floor((kode/100)%10000)
+        let ident = kode % 100
+        
+            if(golongan >= 1 && golongan <=4){
+        let bln;
+        switch(bulan){
+            case 1:bln='jan';break;
+            case 2:bln='feb';break;
+            case 3:bln='mar';break;
+            case 4:bln='april';break;
+            case 5:bln='mei';break;
+            case 6:bln='jun';break;
+            case 7:bln='jul';break;
+            case 8:bln='agustus';break;
+            case 9:bln='september';break;
+            case 10:bln='oktober';break;
+            case 11:bln='november';break; 
+            case 12:bln='desember';break;
+            default : bln = 'invalid'
+        }  
+
+            console.log(`Seorang pegawai golongan ${golongan}, tanggal lahir ${tanggal} ${bln} ${tahun}, identitas ke ${ident}`)
+        }else{
+            console.log ("golongan tidak boleh melebihi 1-4")
+        }
+
+        // 3
+        let hh = 1;
+        let mm = 1;
+        let ss = 1; 
+        let hasil = ss + 1;     
+        if(hasil > 59) {
+            ss = 0;
+            mm = mm + 1;
+            if(mm > 59) {
+                mm = 0;
+                hh = hh + 1;
+                if(hh > 23) {
+                    ss = 0;
+                    mm = 0;
+                    hh = 0;
+                }
+            }
+            console.log(`${hh} Jam ${mm} Menit ${ss} Detik`);
+        } else {
+            console.log(`${hh} Jam ${mm} Menit ${hasil} Detik`);
+        }
+        
+</script>
+</body>
+</html>

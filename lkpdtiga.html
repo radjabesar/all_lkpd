@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD 3</title>
+</head>
+<body>
+    <h1>LKPD 3</h1>
+    <script>
+        // 1
+      let beratJeruk = prompt("Isi berat jeruk!!");
+      let hargaJeruk = 500;
+
+      let TotalHargaSebelumDiskon = (beratJeruk / 100) * hargaJeruk;
+      let Diskon = TotalHargaSebelumDiskon * 0.05;
+      let hargaSetelahDiskon = TotalHargaSebelumDiskon - Diskon;
+
+      console.log("Total Harga Sebelum Diskon : " + TotalHargaSebelumDiskon);
+      console.log("Diskon : " + Diskon);
+      console.log("harga Setelah Diskon : " + hargaSetelahDiskon);
+
+      // 2
+      let bilangan = prompt("Masukan bilangan");
+
+      let ratusan = Math.floor(bilangan / 100);
+      let puluhan = Math.floor(bilangan % 100 / 10) ;
+      let satuan = bilangan % 10;
+
+      console.log("ratusan " + ratusan);
+      console.log("Puluhan " + puluhan);
+      console.log("Satuan " + satuan);
+
+      // 3
+      let drajat = prompt("Masukan derajat celcius hari ini");
+
+      let suhu = (drajat - 32) * (5 / 9);
+      let hasil;
+
+    if (suhu > 300) {
+        hasil = "panas";
+    } else if (suhu < 250) {
+        hasil = "dingin";
+    } else {
+        hasil = "normal";
+    }
+console.log(`Jadi cuaca hari ini ${hasil}`);
+    </script>
+</body>
+</html>

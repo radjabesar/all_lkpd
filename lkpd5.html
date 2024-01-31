@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1
+        // for(let a = 1; a <=50; u++){
+        //     console.log(a)
+        // }
+
+        //2
+        // for(let b = 1; b <=50; b = b+2){
+        //     console.log(b)
+        // }
+
+        //3
+        // for(let c = 1; c <=50; c++){
+        //     if( c % 2 == 0){
+        //         console.log(c)
+        //     }
+        // }
+
+        //4
+        // for(let d = 1; d <=50; d++){
+        //     if(d % 2 == 0){
+        //         console.log(`${d} Bilangan Genap`)
+        //     }
+        //     else{console.log(`${d} Bilangan Ganjil`)}
+        // }
+
+        //5
+        let terbesar = -    Infinity;
+        let terkecil = Infinity;
+        let total = 0;
+
+        for(let a = 1; a <=20; a++){
+            let bil = parseInt(prompt("Masukan Nilai",a))
+            total += bil;
+
+            if(bil > terbesar){
+                terbesar = bil;
+            }
+            if(bil < terkecil){
+                terkecil = bil;
+            }
+        }
+        let Ratarata = total / 20;
+        console.log(`Bilangan Terbesar ${terbesar}`)
+        console.log(`Bilangan Terkecil ${terkecil}`)
+        console.log(`Rata-Rata ${Ratarata}`)
+    </script>
+</body>
+</html>

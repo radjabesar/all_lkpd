@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD 2</title>
+</head>
+<body>
+    <h1>LKPD 2</h1>
+    <script>
+        // 1
+      let nama = "BePe";
+      let gaji = 300000;
+      let tunj = 0.2 * gaji;
+      let pjk = 0.15 * (gaji + tunj);
+      let gajibersih = gaji + tunj - pjk;
+      console.log(`Karyawan yang bernama ${nama} mendapat gaji ${gaji} dengan tunjangan ${tunj} dan pajak ${pjk}, jadi mendapatkan gaji bersih sebesar ${gajibersih}`);
+      // 2
+      alert("Mengubah Jam, Menit, Detik ke Detik");
+      let j = prompt("Masukkan total jam");
+      let m = prompt("Masukkan total menit");
+      let d = prompt("Masukkan total detik");
+
+      const totalDetik = parseInt(j) * 3600 + parseInt(m) * 60 + parseInt(d);
+
+      document.write(
+        `<hr> Mengubah Jam, Menit, Detik > Detik : <br>
+            Apabila ${j} jam ${m} menit dan ${d} detik diubah menjadi detik, Maka hasilnya <br>
+            ${totalDetik} detik <br> <hr>`);
+    </script>
+</body>
+</html>
