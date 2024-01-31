@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+   let c = 1;
+   do {
+    console.log(c);
+    c++;
+   } while(c <= 10);
+
+
+
+let a = 1;
+while(a < 50){
+    if( a % 2 == 0){
+        console.log (`${a} Genap`)
+    }else {
+        console.log (`${a} Ganjil`)
+    }
+    a++;
+}
+
+let h = 1;
+do {
+   if( a % 2 === 0){
+         console.log (`${a} Genap`)
+     }else {
+         console.log (`${a} Ganjil`)
+     }h++;
+}
+while(h <= 50)
+
+let n = prompt("masukan angka");
+let hasil = 1;
+
+for (let i = 2; i <= n; i++) {
+    hasil *= i;
+}
+
+console.log(`faktorial dari ${n} adalah ${hasil}`)
+
+let r = 5;
+let bepe = 1; 
+let d = 2;
+
+while (d <= r) {
+    bepe *= d;
+    d++;
+}
+
+console.log(`factorial dari ${r} adalah ${bepe}`)
+
+
+      </script>
+</body>
+</html>

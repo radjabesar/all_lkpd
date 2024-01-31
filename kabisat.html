@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabisat</title>
+</head>
+<body>
+    <script>
+        // Kabisat
+        let tahun = Number(prompt("Masukan tahun!!"));
+        let maka;
+        if ((tahun % 4 === 0 && tahun % 100 !== 0) || tahun % 400 === 0) {
+        maka = "Tahun Kabisat";
+        } else {
+            maka = "Bukan tahun Kabisat";
+        }
+        console.log(`Jadi tahun ${tahun} adalah ${maka}`);
+
+        // FOR
+        for(let t = 1600; t <= 2024; t = t + 4 ){
+            console.log(t)
+        }
+
+        // DO
+            
+    
+        
+    </script>
+</body>
+</html>

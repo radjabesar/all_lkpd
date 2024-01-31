@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Karyawan = "Raja";
+        let Gaji = 2000
+        let Tunjangan = 0.2 * Gaji;
+        let Pajak = 0.15 * Gaji;
+
+        let GajiBersih = Gaji + Tunjangan - Pajak;
+
+        console.log(`${Karyawan} mendapatkan gaji pokok sebesar ${Gaji} dan tunjangan sebesar ${Tunjangan} lalu harus membayar pajak sebesar ${Pajak} Jadi gaji bersih yang di dapat senilai ${GajiBersih}`)
+
+        let jamDetik = 1*3600;
+        let jamMenit = 30*60;
+        let Detik = 1;
+        
+        let Konversi = jamDetik + jamMenit + (40*Detik);
+        console.log(Konversi)
+
+        let Detiknya = 5440
+        let Jam = Math.floor(Detiknya / 3600 );
+        let SisaDetik = Math.floor(Detiknya % 3600);
+        let menit = Math.floor(SisaDetik / 60);
+        let Dtik = SisaDetik % 60; 
+
+        console.log(`${Jam} Jam ${menit} Menit ${Dtik} Detik`)
+    
+    </script>
+
+    
+</body>
+</html>
